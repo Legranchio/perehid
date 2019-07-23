@@ -1,0 +1,192 @@
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+<style>
+
+
+
+#mail {visibility: visible;}
+#mail:checked ~ #popup {
+visibility: visible;
+position: relative;
+background:#dadada;
+}
+
+
+#popup {
+  visibility: hidden;
+  position: absolute;
+  bottom: 15px;
+  
+}
+
+
+</style>
+</head>
+<body> 
+ 
+<form id="form2"> 
+
+<h2>Контактна інформація:</h2>
+<input type="hidden" name="project_name" value="perekhid.te.ua">
+		<input type="hidden" name="admin_email" value="legranchio@gmail.com">
+		<input type="hidden" name="form_subject" value="Canada">
+ 
+<p>Прізвище:  <input type= "text" name= "przv"> </p> 
+<p>Ім`я:  <input type= "text" name= "name"> </p>
+<p>Телефон  <input type= "text" name= "tele"> </p>
+<p>E-mail:  <input type= "text" name= "email"></p>
+<p>Громадянство:  <input type= "text" name= "gromd"></p> 
+  
+ <h2>Персональна інформація:</h2>
+ 
+ <p>Вік:<input type= "text" name= "age"> </p> 
+ <p>Соціальний статус:  </p>
+ <input type="radio" id="mail" name="soc" value="одружений/заміжн">одружений/заміжня<Br>
+ <input type="radio" name="soc" value="неодружений/не заміжня">неодружений/не заміжня<Br>
+ <br>
+  <br>
+   <br>
+
+ 
+ <div id="popup">
+ <h3>Заповніть дані дружини/чоловіка</h3>
+ <p>Прізвище:  <input type= "text" name= "przv_dru"> </p> 
+<p>Ім`я:  <input type= "text" name= "name_dru"> </p>
+<p>E-mail:  <input type= "text" name= "email_dru"></p>
+<p>Громадянство:  <input type= "text" name= "gromd_dru"></p> 
+
+<p>Вік:<input type= "text" name= "age_dru"> </p> 
+<p>Країна постійного проживання:<input type= "text" name= "contry_dru"> </p>
+
+<b><h2>Попередні звернення до посольства Канади:</b></h2>
+<b>(Чи подавали Ви заяви на отримання іміграційної чи тимчасової візи до Канади?
+(Дата, тип візи, причина відмови (якщо було відмовлено), період перебування на території Канади) 
+)</b>
+
+<p><textarea rows= "5" cols= "35" name= "zvernen_dru" value= "Тут вкажіть деталі."></textarea></p>
+
+
+ <p><h2>Володіння мовами:</h2></p>
+
+<p><input type="checkbox" name="leng_dru" value="Англійська">Англійська<Br></p> 
+
+<input type="checkbox" name="ang1_dru" value="не володію">не володію<Br>
+<input type="checkbox" name="ang2_dru" value="Читання, розмовна">читання, розмовна<Br>
+<input type="checkbox" name="ang3_dru" value="письмова">письмова<Br>
+<input type="checkbox" name="ang4_dru" value="сприйняття на слух">сприйняття на слух<Br>
+
+<p><input type="checkbox" name="leng1_dru" value="французька">Французька<Br></p>
+ 
+<input type="checkbox" name="fran1_dru" value="не володію">не володію<Br>
+<input type="checkbox" name="fran2_dru" value="Читання, розмовна">читання, розмовна<Br>
+<input type="checkbox" name="fran3_dru" value="сприйняття на слух">сприйняття на слух<Br>
+<input type="checkbox" name="fran4_dru" value="письмова">письмова<Br>
+
+ <br>
+ 
+ <p><h2>Освіта:</h2></p>
+<br>
+<p>Навчальний заклад: <input type= "text" name= "zaklad_dru"></p>
+<p>Дата вступу: <input type= "text" name= "data_vstp_dru"></p>
+<p> Дата закінчення: <input type= "text" name= "data_zak_dru"></p>
+<p> Фах: <input type= "text" name= "fach_dru"></p>
+<p> Кваліфікація: <input type= "text" name= "kvalif_dru"></p>  
+
+ 
+ <br>
+<p><h2>Робота:</h2></p>
+<br>
+ 
+ <p> <b>Канада:</b> 
+Роботодавець/посада/службові обов`язки/дата початку роботи/дата звільнення/</p>
+<p><textarea rows= "5" cols= "35" name= "robota_kanada_dru" value= "Тут вкажіть деталі."></textarea></p>
+  
+ <p> <b>Україна (інші країни) за останні 10 років:</b> 
+Роботодавець/посада/службові обов`язки/дата початку роботи/дата звільнення/
+</p>
+<p><textarea rows= "5" cols= "35" name= "robota_ukraine_dru" value= "Тут вкажіть деталі."></textarea></p>
+ 
+<p><b>Чи маєте Ви запрошення на роботу від канадського роботодавця, який має офіційний дозвіл від уряду на наймання іноземних робітників?</b></p>   
+ <input type="radio" name="kan_prop_dru" value="Так">Так<Br>
+ <input type="radio" name="kan_prop_dru" value="Ні">Ні<Br>
+
+ 
+ <p>Чи маєте Ви близьких родичів у Канаді  	(Так/ Ні)
+<b>Якщо Так</b>, то вкажіть ступінь рідства та місце проживання родичів.
+</p><p> <textarea rows= "10" cols= "45" name= "rod_kanad_dru"></textarea></p> 
+ 
+ </div>
+ 
+  
+ <p>Країна постійного проживання: </p><p> <input type= "text" name= "contry"> </p>
+ <p>Наявність дітей, їх вік: </p>
+ <p> <textarea rows= "5" cols= "20" name= "child"></textarea></p>
+ 
+ 
+<b><h2>Попередні звернення до посольства Канади:</b></h2>
+<b>(Чи подавали Ви заяви на отримання іміграційної чи тимчасової візи до Канади?
+(Дата, тип візи, причина відмови (якщо було відмовлено), період перебування на території Канади) 
+)</b>
+
+<p><textarea rows= "5" cols= "35" name= "zvernen" value= "Тут вкажіть деталі."></textarea></p>
+
+
+
+
+
+<p><h2>Володіння мовами:</h2></p>
+
+<p><input type="checkbox" name="leng" value="Англійська">Англійська<Br></p> 
+
+<input type="checkbox" name="ang_1" value="не володію">не володію<Br>
+<input type="checkbox" name="ang_2" value="Читання, розмовна">читання, розмовна<Br>
+<input type="checkbox" name="ang_3" value="сприйняття на слух">сприйняття на слух<Br>
+<input type="checkbox" name="ang_4" value="письмова">письмова<Br>
+
+
+<p><input type="checkbox" name="leng1" value="французька">Французька<Br></p>
+ 
+<input type="checkbox" name="fran_1" value="не володію">не володію<Br>
+<input type="checkbox" name="fran_2" value="Читання, розмовна">читання, розмовна<Br>
+<input type="checkbox" name="fran_3" value="сприйняття на слух">сприйняття на слух<Br>
+<input type="checkbox" name="fran_4" value="письмова">письмова<Br>
+
+
+<br>
+
+
+<p><h2>Освіта:</h2></p>
+<br>
+<p>Навчальний заклад: <input type= "text" name= "zaklad"></p>
+<p>Дата вступу: <input type= "text" name= "data_vstp"></p>
+<p> Дата закінчення: <input type= "text" name= "data_zak"></p>
+<p> Фах: <input type= "text" name= "fach"></p>
+<p> Кваліфікація: <input type= "text" name= "kvalif"></p>  
+
+ 
+ <br>
+<p><h2>Робота:</h2></p>
+<br>
+ 
+ <p> <b>Канада:</b> 
+Роботодавець/посада/службові обов`язки/дата початку роботи/дата звільнення/</p>
+<p><textarea rows= "5" cols= "35" name= "robota_kanada" value= "Тут вкажіть деталі."></textarea></p>
+  
+ <p> <b>Україна (інші країни) за останні 10 років:</b> 
+Роботодавець/посада/службові обов`язки/дата початку роботи/дата звільнення/
+</p>
+<p><textarea rows= "5" cols= "35" name= "robota_ukraine" value= "Тут вкажіть деталі."></textarea></p>
+ 
+<p><b>Чи маєте Ви запрошення на роботу від канадського роботодавця, який має офіційний дозвіл від уряду на наймання іноземних робітників?</b></p>   
+<input type="radio" name="kan_prop" value="Так">Так<Br>
+<input type="radio" name="kan_prop" value="Ні">Ні<Br>
+
+ 
+ <p>Чи маєте Ви близьких родичів у Канаді  	(Так/ Ні)
+<b>Якщо Так</b>, то вкажіть ступінь рідства та місце проживання родичів.
+</p><p> <textarea rows= "10" cols= "45" name= "rod_kanad"></textarea></p> 
+ 
+<input type= "submit" value= "Надіслати"> 
+ </form>
+</body></html>

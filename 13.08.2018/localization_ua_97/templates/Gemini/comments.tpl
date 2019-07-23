@@ -1,0 +1,45 @@
+<div class="basecont">
+	<div class="bcomment">
+		<div class="lcol">
+			<span class="thide arcom">&lt;</span>
+			<div class="avatar"><img src="{foto}" alt=""/></div>
+			<h5>{author}</h5>
+			<p>{date}</p>
+		</div>
+		<div class="rcol">
+			<div class="combox">
+				<script type="text/javascript">//<![CDATA[
+				$(function(){ $("#cinfb{comment-id}").Button("#cinfc{comment-id}"); });
+				//]]></script>
+				<div class="infbtn">
+					<span id="cinfb{comment-id}" class="thide" title="Інформація до коментаря">Інформація до коментаря</span>
+					<div id="cinfc{comment-id}" class="infcont">
+						<ul>
+							<li><i>Група: {group-name}</i></li>
+							<li><i>ICQ: {icq}</i></li>
+							[group=1]<li><i>{ip}</i></li>[/group]
+							<li><i>Реєстрація: {registration}</i></li>
+							<li><i>Статус: [online]<img src="{THEME}/images/online.png" style="vertical-align: middle;" title="Користувач Онлайн" alt="Користувач Онлайн" />[/online][offline]<img src="{THEME}/images/offline.png" style="vertical-align: middle;" title="Користувач offline" alt="Користувач offline" />[/offline]</i></li>
+							<li><i>Публікацій: {news-num}</i></li>
+							<li><i>Коментарів: {comm-num}</i></li>
+						</ul>
+					</div>
+				</div>
+				[aviable=lastcomments]<h3 style="margin-bottom: 0.4em;">{news_title}</h3>[/aviable]
+				{comment}
+				[signature]<br clear="all" /><div class="signature">--------------------</div><div class="slink">{signature}</div><br />[/signature]
+				<div class="comedit">
+					[not-group=5]
+					<span class="argreply">[fast]<b>Цитувати</b>[/fast]</span>
+					<span class="arg">[com-del]Видалити[/com-del]</span>
+					<span class="arg">[com-edit]Змінити[/com-edit]</span>
+					<span class="arg">[complaint]Скарга[/complaint]</span>
+					[group=1]<div class="selectmass">{mass-action}</div>[/group]
+					[/not-group]
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+	</div>
+</div>
